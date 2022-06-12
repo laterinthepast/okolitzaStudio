@@ -126,6 +126,12 @@ html {
   p {
     background-color: rgba(255, 255, 255, 0.644);
     border-radius: 50px;
+    @media (max-width: 768px) {
+      font-size: 125x !important;
+      text-align: center;
+      padding: 5px;
+      border-radius: 10px;
+    }
   }
 }
 
@@ -146,13 +152,19 @@ html {
 .footer {
   width: 100%;
   background-color: black;
+  
   .row {
-    background-color: rgb(24, 23, 23);
+  
   color: #fff;
   
   text-align: center;
-  border-radius: 800px 800px 5px 5px;
+  
   width: 50%;
+  }
+  @media (max-width: 768px) {
+    .contact-info {
+      padding-top: 10px;
+    }
   }
   
 }
