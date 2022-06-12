@@ -174,7 +174,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat; */
   z-index: 0;
-  height: 90%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
