@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Joan&family=Pacifico&family=Shadows+Into+Light&family=Special+Elite&display=swap");
 
-body,html {
+body,
+html {
   font-family: "Special Elite", cursive;
   height: 100%;
 }
@@ -41,16 +42,12 @@ body,html {
 }
 
 .title {
-  position: fixed;
+  position: absolute;
   left: 10%;
   bottom: 35%;
   h1 {
-    font-size: 80px;
     color: #fff;
     font-weight: 200;
-    @media (max-width: 768px) {
-      font-size: 50px;
-    }
   }
 }
 
@@ -113,4 +110,49 @@ body,html {
     opacity: 1;
     left: 0;
   }
+}
+
+.about {
+  background-image: url("/photos/4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    background-color: rgba(255, 255, 255, 0.644);
+    border-radius: 50px;
+  }
+}
+
+.equipment {
+  background-image: url("/photos/4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  height: 100%;
+}
+
+.card {
+  img {
+    width: 100% !important;
+  }
+}
+.footer {
+  width: 100%;
+  background-color: black;
+  .row {
+    background-color: rgb(24, 23, 23);
+  color: #fff;
+  
+  text-align: center;
+  border-radius: 800px 800px 5px 5px;
+  width: 50%;
+  }
+  
 }
