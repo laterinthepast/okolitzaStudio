@@ -113,21 +113,22 @@ html {
 }
 
 .about {
-  background-image: url("/photos/4.jpg");
+/*   background-image: url("/photos/4.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   z-index: 0;
-  height: 100%;
-
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   p {
     background-color: rgba(255, 255, 255, 0.644);
-    border-radius: 50px;
+    
+    
     @media (max-width: 768px) {
-      font-size: 125x !important;
+      font-size: 19px !important;
       text-align: center;
       padding: 5px;
       border-radius: 10px;
@@ -136,35 +137,38 @@ html {
 }
 
 .equipment {
-  background-image: url("/photos/4.jpg");
+ /*  background-image: url("/photos/4.jpg");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   z-index: 0;
   height: 100%;
 }
 
 .card {
+
   img {
     width: 100% !important;
   }
 }
+/* .gallery {
+  background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
+} */
 .footer {
   width: 100%;
   background-color: black;
-  
+
   .row {
-  
-  color: #fff;
-  
-  text-align: center;
-  
-  width: 50%;
+    color: #fff;
+
+    text-align: center;
+
+    width: 50%;
   }
   @media (max-width: 768px) {
     .contact-info {
       padding-top: 10px;
     }
   }
-  
 }
