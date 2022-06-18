@@ -241,7 +241,6 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
 .footer .row {
   color: #fff;
   text-align: center;
-  width: 50%;
 }
 
 @media (max-width: 768px) {
