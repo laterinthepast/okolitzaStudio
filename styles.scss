@@ -152,8 +152,8 @@ html {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; */
-  z-index: 0;
-  height: 100%;
+  z-index: 1;
+  
 }
 
 .card {
@@ -168,13 +168,11 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
 .footer {
   width: 100%;
   background-color: black;
-
+  z-index: 0;
   .row {
     color: #fff;
 
     text-align: center;
-
-    
   }
   @media (max-width: 768px) {
     .contact-info {
