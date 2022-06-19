@@ -234,7 +234,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
     &:hover {
       transform: translateY(-10px);
       transition: 0.3s all ease-in-out;
-      
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
     }
   }
 }
