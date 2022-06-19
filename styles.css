@@ -299,3 +299,10 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
 .about-pic {
   width: 70%;
 }
+
+.artist-card .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
