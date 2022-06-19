@@ -142,10 +142,10 @@ html {
   border: none !important;
 }
 .mt-5 {
-  margin-top: 200px !important;
+  margin-top: 150px !important;
 }
 .mb-5 {
-  margin-bottom: 200px !important;
+  margin-bottom: 150px !important;
 }
 .equipment {
   /*  background-image: url("/photos/4.jpg");
@@ -235,6 +235,17 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
       transform: translateY(-10px);
       transition: 0.3s all ease-in-out;
       box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    }
+  }
+}
+
+.mobile-grid {
+  
+  @media (max-width: 768px) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    h5 {
+      font-size: .8rem !important;
     }
   }
 }

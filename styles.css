@@ -209,11 +209,11 @@ html {
 }
 
 .mt-5 {
-  margin-top: 200px !important;
+  margin-top: 150px !important;
 }
 
 .mb-5 {
-  margin-bottom: 200px !important;
+  margin-bottom: 150px !important;
 }
 
 .equipment {
@@ -307,4 +307,16 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
   transition: 0.3s all ease-in-out;
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
           box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+}
+
+@media (max-width: 768px) {
+  .mobile-grid {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .mobile-grid h5 {
+    font-size: .8rem !important;
+  }
 }
