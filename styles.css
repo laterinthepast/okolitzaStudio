@@ -343,3 +343,28 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
 .custom-tooltip {
   --bs-tooltip-bg: var(--bs-primary);
 }
+
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: rgba(232, 97, 84, 0.8);
+}
+
+.js .cd-top--fade-out {
+  opacity: .5;
+}
+
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s,visibility .3s,background-color .3s;
+  transition: opacity .3s,visibility .3s,background-color .3s;
+}

@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
 
 body,
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 100%;
 }
 
+/* LANDING */
 .landing {
   background-image: url("./photos/photos/Compressed/01_okolitza_studio_rezyserka1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     background-image: url("./photos/photos/landmob.jpg");
-
   }
 }
 
+/* HAMBURGER MENU */
 .hamburger {
   width: 50px;
 }
@@ -38,15 +39,10 @@ html {
   display: block;
   transition: 0.4s all ease-in-out;
 }
-/*   animation: rotateLeft 0.5s ease-in-out;
-  animation-iteration-count: 1;
- */
-
 .ham-span {
-  /* border: 1px solid #333; */
   background-color: #fff;
 }
-
+/* LANDING TITLE */
 .title {
   position: absolute;
   left: 20%;
@@ -59,7 +55,7 @@ html {
     font-weight: 100;
   }
 }
-
+/* NAVIGATION LIST */
 .nav-list {
   position: fixed;
   top: 50%;
@@ -67,7 +63,6 @@ html {
   z-index: 1;
   transform: translate(-50%, -50%);
   display: none;
-
   .nav-item {
     list-style: none;
   }
@@ -77,7 +72,7 @@ html {
     animation: fadeIn 1s;
   }
 }
-
+/* HAMBURGER OVERLAY */
 .overlay {
   background-color: rgba(0, 0, 0, 0.671);
   position: fixed;
@@ -89,7 +84,118 @@ html {
   display: none;
   animation: fadeIn 1s;
 }
-
+/* ABOUT SECTION */
+#about {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 100px;
+  p {
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+}
+.no-border {
+  border: none !important;
+}
+.mt-5 {
+  margin-top: 150px !important;
+}
+.mb-5 {
+  margin-bottom: 150px !important;
+}
+.equipment {
+  /*  background-image: url("/photos/4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  z-index: 1;
+}
+.card {
+  position: relative;
+  img {
+    width: 100% !important;
+  }
+  h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    text-align: center;
+  }
+}
+.footer {
+  width: 100%;
+  z-index: 0;
+  .row {
+    color: #fff;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .contact-info {
+      padding-top: 10px;
+    }
+  }
+}
+.divider {
+  position: relative;
+  span {
+    background-color: rgb(255, 255, 255);
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 1;
+  }
+}
+.about-pic {
+  width: 90%;
+}
+.artist-card {
+  .card {
+    &:hover {
+      transform: translateY(-10px);
+      transition: 0.3s all ease-in-out;
+      box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    }
+  }
+}
+.mobile-grid {
+  @media (max-width: 768px) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    h5 {
+      font-size: 0.8rem !important;
+    }
+  }
+}
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: hsla(5, 76%, 62%, 0.8);
+}
+.js .cd-top--fade-out {
+  opacity: 0.5;
+}
+.js .cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.js .cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
+}
+/* ANIMATIONS */
 @keyframes rotateRight {
   0% {
     transform: rotate(0deg);
@@ -120,80 +226,6 @@ html {
     left: 0;
   }
 }
-
-#about {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 100px;
-  p {
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
-}
-
-.shadow-1 {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 20px 0px !important;
-}
-.shadow-2 {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px !important;
-}
-.shadow-3 {
-  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
-}
-.no-border {
-  border: none !important;
-}
-.mt-5 {
-  margin-top: 150px !important;
-}
-.mb-5 {
-  margin-bottom: 150px !important;
-}
-.equipment {
-  /*  background-image: url("/photos/4.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  z-index: 1;
-}
-
-.card {
-  position: relative;
-  img {
-    width: 100% !important;
-  }
-  h5 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: black;
-    text-align: center;
-  }
-}
-/* .gallery {
-  background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
-} */
-.footer {
-  
-  width: 100%;
-  
-  z-index: 0;
-  .row {
-    color: #fff;
-
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-    .contact-info {
-      padding-top: 10px;
-    }
-  }
-}
-
 .blink {
   animation: blink-animation 1.2s steps(5, start) infinite;
   -webkit-animation: blink-animation 1.2s steps(5, start) infinite;
@@ -209,7 +241,7 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
     visibility: hidden;
   }
 }
-
+/* NEON EFFECT */
 .neonText {
   color: rgb(207, 13, 13);
   text-shadow: 0 0 7px rgb(238, 12, 12), 0 0 10px #fff, 0 0 21px #fff,
@@ -222,49 +254,14 @@ background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(24,8,207,1) 100%);
     0 0 42px rgb(255, 0, 0), 0 0 82px rgb(255, 0, 0), 0 0 92px rgb(236, 26, 26),
     0 0 102px rgb(252, 42, 42), 0 0 151px rgb(92, 0, 0);
 }
-
-/* Additional styling */
-
-.divider {
-  position: relative;
-
-  span {
-    background-color: rgb(255, 255, 255);
-    width: 1px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    z-index: 1;
-  }
+/* EFFECTS */
+.shadow-1 {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 20px 0px !important;
 }
-.about-pic {
-  width: 90%;
-  
+.shadow-2 {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px !important;
 }
-
-.artist-card {
-  .card {
-    &:hover {
-      transform: translateY(-10px);
-      transition: 0.3s all ease-in-out;
-      box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
-    }
-  }
-}
-
-.mobile-grid {
-  
-  @media (max-width: 768px) {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    h5 {
-      font-size: .8rem !important;
-    }
-  }
-}
-
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
+.shadow-3 {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
 }
