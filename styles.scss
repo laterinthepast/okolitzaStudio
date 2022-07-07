@@ -1,48 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
 
 body,
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Genos", sans-serif;
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* LANDING */
-.landing {
-  background-image: url("./photos/photos/Compressed/01_okolitza_studio_rezyserka1.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 0;
-  @media (max-width: 768px) {
-    background-image: url("./photos/photos/landmob.jpg");
-  }
-}
 
 /* HAMBURGER MENU */
 .hamburger {
   width: 50px;
+  position: fixed;
+  top: 50px;
+  right: 150px;
+  z-index: 999;
+  .ham-span {
+    background-color: rgb(43, 43, 43);
+    display: inline-block;
+    height: 3px;
+    margin: 5px !important;
+    padding: 0px !important;
+  }
 }
 .active-right {
-  transform: rotate(45deg);
+  transform: rotate(90deg);
   position: relative;
-  top: 15px;
+
   transition: 0.4s all ease-in-out;
   z-index: 999;
 }
 .active-left {
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
   transition: 0.4s all ease-in-out;
   z-index: 999;
 }
 .ham-two {
   display: block;
-  transition: 0.4s all ease-in-out;
+  transition: 0.1s all ease-in-out;
 }
-.ham-span {
-  background-color: #fff;
-}
+
 /* LANDING TITLE */
+.landing {
+  height: auto;
+  hr {
+    width: 65%;
+    border: 1px solid rgb(0, 0, 0) !important;
+    opacity: 1;
+  }
+}
 .title {
   position: absolute;
   left: 20%;
@@ -72,6 +81,10 @@ html {
     animation: fadeIn 1s;
   }
 }
+.navbar {
+  height: 15vh;
+}
+
 /* HAMBURGER OVERLAY */
 .overlay {
   background-color: rgba(0, 0, 0, 0.671);
@@ -85,31 +98,29 @@ html {
   animation: fadeIn 1s;
 }
 /* ABOUT SECTION */
-#about {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  gap: 100px;
-  p {
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
+.studio-text {
+  width: 62.34%;
+  padding: 143px 0;
+}
+.cite-text {
+  padding: 143px 143px;
+  text-align: left;
+}
+.studio-img {
+  padding: 143px 0;
+  padding-left: 13.5px;
+}
+.end-text {
+  padding: 0 143px;
 }
 .no-border {
   border: none !important;
 }
-.mt-5 {
-  margin-top: 150px !important;
-}
-.mb-5 {
-  margin-bottom: 150px !important;
-}
 .equipment {
-  /*  background-image: url("/photos/4.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat; */
-  z-index: 1;
+  padding: 72.5px 0;
+}
+.booking-padding {
+  padding: 143px 0;
 }
 .card {
   position: relative;
@@ -124,35 +135,6 @@ html {
     background-color: black;
     text-align: center;
   }
-}
-.footer {
-  width: 100%;
-  z-index: 0;
-  .row {
-    color: #fff;
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-    .contact-info {
-      padding-top: 10px;
-    }
-  }
-}
-.divider {
-  position: relative;
-  span {
-    background-color: rgb(255, 255, 255);
-    width: 1px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-    z-index: 1;
-  }
-}
-.about-pic {
-  width: 90%;
 }
 .artist-card {
   .card {
@@ -172,29 +154,7 @@ html {
     }
   }
 }
-.custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
-}
-#toTopBtn {
-  position: fixed;
-  bottom: 26px;
-  right: 39px;
-  z-index: 98;
-  padding: 21px;
-  background-color: hsla(5, 76%, 62%, 0.8);
-}
-.js .cd-top--fade-out {
-  opacity: 0.5;
-}
-.js .cd-top--is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-.js .cd-top {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s, visibility 0.3s, background-color 0.3s;
-}
+
 /* ANIMATIONS */
 @keyframes rotateRight {
   0% {
@@ -241,19 +201,6 @@ html {
     visibility: hidden;
   }
 }
-/* NEON EFFECT */
-.neonText {
-  color: rgb(207, 13, 13);
-  text-shadow: 0 0 7px rgb(238, 12, 12), 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(255, 0, 0), 0 0 82px rgb(255, 0, 0), 0 0 92px rgb(236, 26, 26),
-    0 0 102px rgb(252, 42, 42), 0 0 151px rgb(92, 0, 0);
-}
-.neonText-2 {
-  background-color: rgb(255, 0, 0);
-  box-shadow: 0 0 7px rgb(238, 12, 12), 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(255, 0, 0), 0 0 82px rgb(255, 0, 0), 0 0 92px rgb(236, 26, 26),
-    0 0 102px rgb(252, 42, 42), 0 0 151px rgb(92, 0, 0);
-}
 /* EFFECTS */
 .shadow-1 {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 20px 0px !important;
@@ -264,4 +211,77 @@ html {
 .shadow-3 {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 10px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px !important;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    right: 15px;
+    top: 15px;
+  }
+  .navbar {
+    height: 8vh;
+  }
+  .landing-mobile {
+    flex-direction: column !important;
+    padding: 20px;
+    gap: 50px;
+    &-img {
+      padding: 0 !important;
+      width: 60%;
+    }
+    &-second {
+     display: none;
+
+    }
+  }
+  .landing-text {
+    padding: 0 !important;
+  }
+  .landing {
+    
+    hr {
+      width: 100%;
+    }
+  }
+  .studio-text{
+    padding: 0px !important;
+    margin: 0 !important;
+    width: 100%;
+    padding-top: 20px !important;
+  }
+  .studio-img {
+    padding: 0 !important;
+    padding-top: 20px !important;
+  }
+  .cite-text{
+    padding: 40px 20px;
+  }
+  .studio-mobile-img {
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .img-fluid{
+      padding: 10px !important;
+      border: none !important;
+    }
+    img {
+      width: 50%;
+    }
+  }
+  .studio-info{
+    padding: 9px !important;
+  }
+  .end-text {
+    padding: 9px !important;
+  }
+  .booking-padding{
+    gap: 20px;
+   
+  }
+  .no-border {
+    border: none !important;
+  }
 }
