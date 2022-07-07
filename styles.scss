@@ -230,20 +230,18 @@ html {
       width: 60%;
     }
     &-second {
-     display: none;
-
+      display: none;
     }
   }
   .landing-text {
     padding: 0 !important;
   }
   .landing {
-    
     hr {
       width: 100%;
     }
   }
-  .studio-text{
+  .studio-text {
     padding: 0px !important;
     margin: 0 !important;
     width: 100%;
@@ -253,7 +251,7 @@ html {
     padding: 0 !important;
     padding-top: 20px !important;
   }
-  .cite-text{
+  .cite-text {
     padding: 40px 20px;
   }
   .studio-mobile-img {
@@ -263,7 +261,7 @@ html {
     justify-content: center;
     gap: 20px;
 
-    .img-fluid{
+    .img-fluid {
       padding: 10px !important;
       border: none !important;
     }
@@ -271,15 +269,16 @@ html {
       width: 50%;
     }
   }
-  .studio-info{
+  .studio-info {
     padding: 9px !important;
   }
   .end-text {
     padding: 9px !important;
+    padding-top: 56px !important;
   }
-  .booking-padding{
+  .booking-padding {
     gap: 20px;
-   
+    padding: 56px 0 !important;
   }
   .no-border {
     border: none !important;

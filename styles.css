@@ -362,9 +362,11 @@ html {
   }
   .end-text {
     padding: 9px !important;
+    padding-top: 56px !important;
   }
   .booking-padding {
     gap: 20px;
+    padding: 56px 0 !important;
   }
   .no-border {
     border: none !important;
