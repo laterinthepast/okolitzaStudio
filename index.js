@@ -1,41 +1,92 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.navbarr');
-const overlay = document.querySelector('.overlay');
-const navLinks = document.querySelector('.nav-list');
-const hamOne = document.querySelector('.ham-one');
-const hamTwo = document.querySelector('.ham-two');
-const hamThree = document.querySelector('.ham-three');
+hamburger.addEventListener("click", mobileMenu);
 
-overlay.addEventListener('click', () => {
-    hamOne.classList.remove('active-right');
-    hamThree.classList.remove('active-left');
-    hamTwo.style.display = 'block';
-    overlay.style.display = 'none';
-    navLinks.style.display = 'none';
-    nav.classList.remove('nav-links');
-    hamburger.classList.remove('is-active');
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
-);
-hamburger.addEventListener('click', () => {
-    if (hamburger.classList.contains('is-active')) {
-        hamOne.classList.remove('active-right');
-        hamThree.classList.remove('active-left');
-        hamTwo.style.display = 'block';
-        overlay.style.display = 'none';
-        navLinks.style.display = 'none';
-        nav.classList.remove('nav-links');
-        hamburger.classList.remove('is-active');
-    }
-    else {
-        hamOne.classList.add('active-right');
-        hamThree.classList.add('active-left');
-        hamTwo.style.display = 'none';
-        overlay.style.display = 'inline-block';
-        navLinks.style.display = 'block';
-        nav.classList.toggle('nav-links');
-        hamburger.classList.toggle('is-active');
-    }
-}
-);
 
+
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+let header = document.getElementsByClassName(".header");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+
+    var slider = tns({
+            container: '.my-slider',
+  "items": 5,
+  "slideBy": "page",
+    "mouseDrag": true,
+  "swipeAngle": false,
+  "speed": 400,
+  "controls": false,
+      "controlsContainer": false,
+      "nav": false,
+      "controlsText": false,
+      "prevButton": false,
+      "nextButton": false    
+    });
+        
+
+const loaderContainer = document.querySelector('.loader-container');
+
+window.addEventListener('load', () => {
+    loaderContainer.style.display = 'none';
+});
+
+window.onload = () => {
+  // (A) GET LIGHTBOX & ALL .ZOOMD IMAGES
+  let all = document.getElementsByClassName("zoomD"),
+      lightbox = document.getElementById("lightbox");
+ 
+  // (B) CLICK TO SHOW IMAGE IN LIGHTBOX
+  // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+  if (all.length>0) { for (let i of all) {
+    i.onclick = () => {
+      let clone = i.cloneNode();
+      clone.className = "";
+      lightbox.innerHTML = "";
+      lightbox.appendChild(clone);
+      lightbox.className = "show";
+    };
+  }}
+ 
+  // (C) CLICK TO CLOSE LIGHTBOX
+  lightbox.onclick = () => lightbox.className = "";
+};
