@@ -34,9 +34,37 @@
 </head>
 
 <body>
-<!-- <div class="loader-container">
-      <div class="spinner"></div>
-    </div> -->
+  <div class="hidden">
+    <script type="text/javascript">
+    
+        var images = new Array()
+        function preload() {
+          for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+          }
+        }
+        preload(
+          "/photos/Compressed/2.jpg",
+          "/photos/Compressed/4.jpg",
+          "/photos/Compressed/6.jpg",
+          "/photos/Compressed/7.jpg",
+          "/photos/Compressed/8.jpg",
+          "/photos/Compressed/9.jpg",
+          "/photos/Compressed/10.jpg",
+          "/photos/Compressed/11.jpg",
+          "/photos/Compressed/12.jpg",
+          "/photos/Compressed/13.jpg",
+          "/photos/Compressed/14.jpg",
+          "/photos/Compressed/15.jpg",
+          "/photos/Compressed/Component 1.png",
+          "/photos/Compressed/sprze╠¿t.jpg",
+          "/photos/Compressed/10 o nas.jpg"
+        )
+   
+    </script>
+  </div>
+  
   <div class="landing pb-5">
     <header class="header">
       <nav class="navbar">
@@ -83,35 +111,7 @@
         pojedynczych instrumentów, sekcji, wokali i całych zespołów.
       </p>
     </div>
-    <div class="hidden">
-      <script type="text/javascript">
-      
-          var images = new Array()
-          function preload() {
-            for (i = 0; i < preload.arguments.length; i++) {
-              images[i] = new Image()
-              images[i].src = preload.arguments[i]
-            }
-          }
-          preload(
-            "/photos/Compressed/2.jpg",
-            "/photos/Compressed/4.jpg",
-            "/photos/Compressed/6.jpg",
-            "/photos/Compressed/7.jpg",
-            "/photos/Compressed/8.jpg",
-            "/photos/Compressed/9.jpg",
-            "/photos/Compressed/10.jpg",
-            "/photos/Compressed/11.jpg",
-            "/photos/Compressed/12.jpg",
-            "/photos/Compressed/13.jpg",
-            "/photos/Compressed/14.jpg",
-            "/photos/Compressed/15.jpg",
-            "/photos/Compressed/Component 1.png",
-            "/photos/Compressed/sprze╠¿t.jpg"
-          )
-     
-      </script>
-    </div>
+
     <div class="photo-gallery">
       <div class="container">
         <div class="row photos">
