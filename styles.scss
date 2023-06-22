@@ -18,6 +18,10 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
+  @media screen and (max-width: 768px){
+    background-image: url("./photos/Compressed/trzy.jpg");
+
+  }
 }
 .title {
   display: flex;
@@ -338,4 +342,8 @@ img {
 
 *{
   transition: all 0.2s ease-in-out;
+}
+
+.fc-black {
+  color: #000000;
 }
