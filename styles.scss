@@ -265,20 +265,7 @@ html {
   text-align: center;
 }
 
-.my-slider {
-  transition: all 0.2s ease-in-out;
-  filter: none;
-  -webkit-filter: grayscale(0);
 
-  img:hover {
-    filter: url(filters.svg#grayscale);
-    /* Firefox 3.5+ */
-    filter: gray;
-    /* IE5+ */
-    -webkit-filter: grayscale(1);
-    /* Webkit Nightlies & Chrome Canary */
-  }
-}
 
 .bg-one {
   background-image: url("./photos/Compressed/tlo1.jpg");
@@ -432,10 +419,6 @@ img {
   padding-bottom: 30px;
 }
 
-
-* {
-  transition: all 0.2s ease-in-out;
-}
 
 .fc-black {
   color: #000000;
