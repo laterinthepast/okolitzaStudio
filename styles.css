@@ -234,7 +234,11 @@ html {
 }
 
 .text-bg {
-  background-color: rgba(255, 255, 255, 0.5882352941);
+  background-color: rgba(255, 255, 255, 0.3960784314);
+}
+
+.text-dark {
+  color: #000000 !important;
 }
 
 .bg-three {
