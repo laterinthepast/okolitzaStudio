@@ -59,236 +59,283 @@
       </nav>
     </header>
   </div>
+  <div class="hidden">
+    <script type="text/javascript">
+
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(
+        "/photos/Compressed/2.jpg",
+        "/photos/Compressed/4.jpg",
+        "/photos/Compressed/6.jpg",
+        "/photos/Compressed/7.jpg",
+        "/photos/Compressed/8.jpg",
+        "/photos/Compressed/9.jpg",
+        "/photos/Compressed/10.jpg",
+        "/photos/Compressed/11.jpg",
+        "/photos/Compressed/12.jpg",
+        "/photos/Compressed/13.jpg",
+        "/photos/Compressed/14.jpg",
+        "/photos/Compressed/15.jpg",
+        "/photos/Compressed/Component 1.png",
+        "/photos/Compressed/sprze╠¿t.jpg",
+        "/photos/Compressed/10 o nas.jpg",
+        "/photos/Compressed/1 start.jpg",
+        "/photos/Compressed/sprzet.jpg"
+      )
+
+    </script>
+  </div>
   <div class="gear container-fluid bg-three w-100 d-flex justify-content-around flex-column align-items-center">
-    <div class="content equipment p-2">
-      <h2 class="display-3 text-light fw-bold" id="sprzet">SPRZĘT</h2>
-      <h2 class="fs-3 p-0 text-light" id="sprzet">
-        SSL 4000G+ 48 mic/line input
-      </h2>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalOne">
-        odsłuchy
-      </button>
-      <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalOneLabel">odsłuchy:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md d-flex justify-content-center align-items-center mobile-sprzet">
+          <img src="/photos/Compressed/sprzet.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md d-flex justify-content-center align-items-center">
+          <div class="content equipment p-2 ">
+            <h2 class="display-3 text-light fw-bold" id="sprzet">SPRZĘT</h2>
+
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalOne">
+              mikser
+            </button>
+            <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalOneLabel">mikser:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">SSL 4000G+ 48 mic/line input</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">ATC SCM100ASL Pro</li>
-                <li class="group-item">Proac Studio 100</li>
-                <li class="group-item">Auratone 5C</li>
-                <li class="group-item">Crane Song Avocet</li>
-                <li class="group-item">Trinnov ST2 Pro</li>
-              </ul>
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalOne">
+              odsłuch
+            </button>
+            <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalOneLabel">odsłuch:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">ATC SCM100ASL Pro</li>
+                      <li class="group-item">Proac Studio 100</li>
+                      <li class="group-item">Auratone 5C</li>
+                      <li class="group-item">Crane Song Avocet</li>
+                      <li class="group-item">Trinnov ST2 Pro</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalTwo">
+              komputer/zapis
+            </button>
+            <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="modalTwoLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalTwoLabel">komputer/zapis:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">Mac Pro 5.1</li>
+                      <li class="group-item">Pro Tools 10 HD 3</li>
+                      <li class="group-item">Crane Song HEDD 192</li>
+                      <li class="group-item">Digi 192 x 4 (48 IN /48 OUT)</li>
+                      <li class="group-item">Digi 192 digital AES/EBU</li>
+                      <li class="group-item">Avid Sync IO</li>
+                      <li class="group-item">Universal Audio UAD-2</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalThree">
+              outboard
+            </button>
+            <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="modalThreeLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalThreeLabel">outboard:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">2 x Heritage Audio 6673</li>
+                      <li class="group-item">2 x BAE 1272</li>
+                      <li class="group-item">
+                        Chandler Limited EMI TG12345 Curve Bender
+                      </li>
+                      <li class="group-item">2 x API 550a</li>
+                      <li class="group-item">2 x API 560</li>
+
+                      <li class="group-item">2 x Empirical Labs Distressor</li>
+                      <li class="group-item">Chandler Limited EMI TG1 Limiter</li>
+                      <li class="group-item">UTA UnFairchild 670M II</li>
+                      <li class="group-item">Retro Sta-Level</li>
+                      <li class="group-item">SPL Transient Designer 4</li>
+                      <li class="group-item">Dolby 361 (CAT 22 mod)</li>
+                      <li class="group-item">Chandler Tube Driver</li>
+                      <li class="group-item">
+                        Eventide H3000 D/SE Ultra-Harmonizer
+                      </li>
+                      <li class="group-item">2 x Yamaha SPX90</li>
+                      <li class="group-item">Fulltone Tube Tape Echo</li>
+                      <li class="group-item">Watkins Copicat</li>
+                      <li class="group-item">OTO Machines BIM</li>
+                      <li class="group-item">OTO Machines BAM</li>
+                      <li class="group-item">Radial TankDriver (spring reverb)</li>
+                      <li class="group-item">Yamaha e1005</li>
+                      <li class="group-item">Alesis Midiverb II</li>
+                      <li class="group-item">Tech 21 Sansamp</li>
+                      <li class="group-item">BBE Sonic Maximizer 322</li>
+                      <li class="group-item">dbx 263X De-Esser</li>
+                      <li class="group-item">Roland Boss CE-300</li>
+                      <li class="group-item">ZOD Audio DI</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalFour">
+              mikrofony
+            </button>
+            <div class="modal fade" id="modalFour" tabindex="-1" aria-labelledby="modalFourLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalFourLabel">mikrofony:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">Neumann U67</li>
+                      <li class="group-item">Neumann KM254</li>
+                      <li class="group-item">2x Microtech Gefell M71</li>
+                      <li class="group-item">2 x Coles 4038</li>
+                      <li class="group-item">2 x Royer R121</li>
+                      <li class="group-item">2 x AKG 451eb</li>
+                      <li class="group-item">2 x AKG C414 B-TL II</li>
+                      <li class="group-item">AKG D20</li>
+                      <li class="group-item">AEA R88</li>
+                      <li class="group-item">Ear Trumpet Labs Edwina</li>
+                      <li class="group-item">2 x Sennheiser MD421</li>
+                      <li class="group-item">Sennheiser MD441</li>
+                      <li class="group-item">Shure SM7</li>
+                      <li class="group-item">Shure SM57 x 4</li>
+                      <li class="group-item">Shure SM57 (transformer mod)</li>
+                      <li class="group-item">Shure Beta 91A</li>
+                      <li class="group-item">Electro-Voice 635a</li>
+                      <li class="group-item">Electro-Voice RE20</li>
+                      <li class="group-item">Beyerdynamic M88</li>
+                      <li class="group-item">Revox M3500</li>
+                      <li class="group-item">Radioshack PZM</li>
+                      <li class="group-item">Yamaha subkick</li>
+                      <li class="group-item">and more</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
+              data-bs-target="#modalFive">
+              wzmacniacze i więcej
+            </button>
+            <div class="modal fade" id="modalFive" tabindex="-1" aria-labelledby="modalFiveLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="modalFiveLabel">wzmacniacze i więcej:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-dark text-light">
+                    <ul class="list">
+                      <li class="group-item">Ampeg SVT (Magnavox)</li>
+                      <li class="group-item">Ampeg VT-22</li>
+                      <li class="group-item">Selmer Treble & Bass</li>
+                      <li class="group-item">
+                        Marshall 1923C 85th Anniversary 50W 2x12
+                      </li>
+                      <li class="group-item">Vox AC30</li>
+                      <li class="group-item">Vox AC4</li>
+                      <li class="group-item">Sovtek MIG50</li>
+                      <li class="group-item">Roland Jazz Chorus 160</li>
+                      <li class="group-item">Laboga Diamond Sound 100W</li>
+                      <li class="group-item">BURLO BA-50</li>
+                      <li class="group-item">Messa/Boogie Mark III</li>
+                      <li class="group-item">Rumbo 1x12</li>
+                      <li class="group-item">Rumbo 2x12</li>
+                      <li class="group-item">Ampeg SVT-410HLF</li>
+                      <li class="group-item">Selmer 100</li>
+                    </ul>
+                    <p>
+                      Do dyspozycji muzyków jest również ciągle zmieniająca się kolekcja naszych gitar (m.in. Fender,
+                      Eco, SKG, Tone Zone, FANO, Jolana) oraz efektów gitarowych (Pete Cornish, MOOG, Line 6, BOSS,
+                      Fulltone, Digitech, Eventide, Death by Audio, Gamechanger Audio, MXR, Electro-Harmonix).
+                    </p>
+                  </div>
+                  <div class="modal-footer bg-dark text-light">
+                    <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
+                      zamknij
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalTwo">
-        komputer/zapis
-      </button>
-      <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="modalTwoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalTwoLabel">komputer/zapis:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">Mac Pro 5.1</li>
-                <li class="group-item">Pro Tools 10 HD 3</li>
-                <li class="group-item">Crane Song HEDD 192</li>
-                <li class="group-item">Digi 192 x 4 (48 IN /48 OUT)</li>
-                <li class="group-item">Digi 192 digital AES/EBU</li>
-                <li class="group-item">Avid Sync IO</li>
-                <li class="group-item">Universal Audio UAD-2</li>
-              </ul>
-            </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalThree">
-        outboard
-      </button>
-      <div class="modal fade" id="modalThree" tabindex="-1" aria-labelledby="modalThreeLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalThreeLabel">outboard:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">2 x Heritage Audio 6673</li>
-                <li class="group-item">2 x BAE 1272</li>
-                <li class="group-item">
-                  Chandler Limited EMI TG12345 Curve Bender
-                </li>
-                <li class="group-item">2 x API 550a</li>
-                <li class="group-item">2 x API 560</li>
-                <li class="group-item">Klark Teknik DN360</li>
-                <li class="group-item">2 x Empirical Labs Distressor</li>
-                <li class="group-item">Chandler Limited EMI TG1 Limiter</li>
-                <li class="group-item">UTA UnFairchild 670M II</li>
-                <li class="group-item">Retro Sta-Level</li>
-                <li class="group-item">SPL Transient Designer 4</li>
-                <li class="group-item">Dolby 361 (CAT 22 mod)</li>
-                <li class="group-item">Chandler Tube Driver</li>
-                <li class="group-item">
-                  Eventide H3000 D/SE Ultra-Harmonizer
-                </li>
-                <li class="group-item">2 x Yamaha SPX90</li>
-                <li class="group-item">Fulltone Tube Tape Echo</li>
-                <li class="group-item">Watkins Copicat</li>
-                <li class="group-item">OTO Machines BIM</li>
-                <li class="group-item">OTO Machines BAM</li>
-                <li class="group-item">Radial TankDriver (spring reverb)</li>
-                <li class="group-item">Yamaha e1005</li>
-                <li class="group-item">Alesis Midiverb II</li>
-                <li class="group-item">Tech 21 Sansamp</li>
-                <li class="group-item">BBE Sonic Maximizer 322</li>
-                <li class="group-item">dbx 263X De-Esser</li>
-                <li class="group-item">Roland Boss CE-300</li>
-                <li class="group-item">ZOD Audio DI</li>
-              </ul>
-            </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalFour">
-        mikrofony
-      </button>
-      <div class="modal fade" id="modalFour" tabindex="-1" aria-labelledby="modalFourLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalFourLabel">mikrofony:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">Neumann U67</li>
-                <li class="group-item">Neumann KM254</li>
-                <li class="group-item">2x Microtech Gefell M71</li>
-                <li class="group-item">2 x Coles 4038</li>
-                <li class="group-item">2 x Royer R121</li>
-                <li class="group-item">2 x AKG 451eb</li>
-                <li class="group-item">2 x AKG C414 B-TL II</li>
-                <li class="group-item">AKG D20</li>
-                <li class="group-item">AEA R88</li>
-                <li class="group-item">Ear Trumpet Labs Edwina</li>
-                <li class="group-item">2 x Sennheiser MD421</li>
-                <li class="group-item">Sennheiser MD441</li>
-                <li class="group-item">Shure SM7</li>
-                <li class="group-item">Shure SM57 x 4</li>
-                <li class="group-item">Shure SM57 (transformer mod)</li>
-                <li class="group-item">Shure Beta 91A</li>
-                <li class="group-item">Electro-Voice 635a</li>
-                <li class="group-item">Electro-Voice RE20</li>
-                <li class="group-item">Beyerdynamic M88</li>
-                <li class="group-item">Revox M3500</li>
-                <li class="group-item">Radioshack PZM</li>
-                <li class="group-item">Yamaha subkick</li>
-                <li class="group-item">and more</li>
-              </ul>
-            </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalFive">
-        wzmachole
-      </button>
-      <div class="modal fade" id="modalFive" tabindex="-1" aria-labelledby="modalFiveLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalFiveLabel">wzmachole:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">Ampeg SVT (Magnavox)</li>
-                <li class="group-item">Ampeg VT-22</li>
-                <li class="group-item">
-                  Marshall 1923C 85th Anniversary 50W 2x12
-                </li>
-                <li class="group-item">Vox AC30</li>
-                <li class="group-item">Vox AC4</li>
-                <li class="group-item">Sovtek MIG50</li>
-                <li class="group-item">Roland Jazz Chorus 160</li>
-                <li class="group-item">Laboga Diamond Sound 100W</li>
-                <li class="group-item">BURLO BA-50</li>
-                <li class="group-item">Messa/Boogie Mark III</li>
-              </ul>
-            </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary bg-dark border-light m-1" data-bs-toggle="modal"
-        data-bs-target="#modalSix">
-        kolumny
-      </button>
-      <div class="modal fade" id="modalSix" tabindex="-1" aria-labelledby="modalSixLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header bg-dark text-light">
-              <h5 class="modal-title" id="modalSixLabel">kolumny:</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body bg-dark text-light">
-              <ul class="list">
-                <li class="group-item">Rumbo 1x12</li>
-                <li class="group-item">Rumbo 2x12</li>
-                <li class="group-item">Ampeg SVT-410HLF</li>
-                <li class="group-item">Selmer 100</li>
-              </ul>
-            </div>
-            <div class="modal-footer bg-dark text-light">
-              <button type="button" class="btn btn-secondary bg-dark" data-bs-dismiss="modal">
-                zamknij
-              </button>
-            </div>
-          </div>
+        <div class="container instagram">
+          <a href="#" class="fa fa-instagram insta text-light display-1"></a>
         </div>
       </div>
     </div>
-    <div class="container instagram pt-5 pb-5">
-      <a href="#" class="fa fa-instagram insta text-light display-1"></a>
-    </div>
+
   </div>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">
