@@ -65,6 +65,7 @@ html {
   border-bottom: 1px solid #e2e8f0;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .navbar {
@@ -74,7 +75,7 @@ html {
   align-items: center;
   padding: 1rem;
   font-family: "Mohave", sans-serif;
-  background-color: rgba(0, 0, 0, 0.368627451);
+  background-color: rgba(0, 0, 0, 0.5411764706);
 }
 
 .hamburger {
@@ -204,35 +205,6 @@ html {
   font-family: "Mohave", sans-serif;
   font-weight: 900;
   text-align: center;
-}
-
-.my-slider {
-  height: 600px;
-}
-@media only screen and (max-width: 768px) {
-  .my-slider {
-    height: 400px;
-  }
-  .my-slider img {
-    width: 300px !important;
-  }
-}
-.my-slider img {
-  width: 100%;
-}
-
-.tns-controls {
-  display: none;
-}
-
-.tns-item {
-  width: auto !important;
-}
-
-.tnv-nav-active button,
-.tns-nav button,
-.tns-outer button {
-  display: none !important;
 }
 
 .instagram {
