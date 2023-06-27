@@ -343,4 +343,8 @@ img {
 }
 .justify-txt {
   text-align: justify !important;
+}
+
+sup {
+  vertical-align: super;
 }/*# sourceMappingURL=styles.css.map */
