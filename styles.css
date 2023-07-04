@@ -6,9 +6,11 @@ html {
   height: 100%;
   width: 100%;
 }
+
 .container-fluid {
   padding: 0 !important;
 }
+
 /* LANDING */
 .landing {
   background-image: url("./photos/Compressed/1 start.jpg");
@@ -17,12 +19,12 @@ html {
   background-repeat: no-repeat;
   z-index: 0;
 }
+
 @media screen and (max-width: 768px) {
   .landing {
     background-image: url("./photos/Compressed/trzy.jpg");
   }
 }
-
 .title {
   display: flex;
   justify-content: center;
@@ -32,11 +34,12 @@ html {
   color: #fff;
   font-family: "Righteous", cursive;
 }
+
 .title h1 {
   font-size: 200px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
 @media screen and (max-width: 1280px) {
   .title h1 {
     font-size: 100px;
@@ -58,6 +61,7 @@ html {
 .title h2 {
   text-align: center;
 }
+
 /* HEADER */
 .header {
   border-bottom: 1px solid #e2e8f0;
@@ -65,6 +69,7 @@ html {
   width: 100%;
   z-index: 1000;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -74,9 +79,11 @@ html {
   font-family: "Mohave", sans-serif;
   background-color: rgba(0, 0, 0, 0.5411764706);
 }
+
 .hamburger {
   display: none;
 }
+
 .bar {
   display: block;
   width: 30px;
@@ -86,6 +93,7 @@ html {
   transition: all 0.3s ease-in-out;
   background-color: #ffffff;
 }
+
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -93,20 +101,34 @@ html {
   margin: 0;
   padding: 0;
 }
+
 .nav-item {
   margin-left: 20px;
   text-decoration: none;
   list-style: none;
 }
+
 .nav-link {
   font-size: 1.6rem;
   font-weight: 400;
   color: #ffffff;
   text-align: left;
 }
+
 .nav-link:hover {
   color: #ffa806;
 }
+
+.us-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-shadow img {
+  box-shadow: none !important;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -144,7 +166,6 @@ html {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* back to top button */
 #myBtn {
   display: none;
@@ -174,10 +195,12 @@ html {
   font-size: 18px;
   /* Increase font size */
 }
+
 #myBtn:hover {
   background-color: #555;
   /* Add a dark-grey background on hover */
 }
+
 @media only screen and (max-width: 768px) {
   .mobile h1 {
     font-size: 70px;
@@ -191,11 +214,19 @@ html {
   }
 }
 .big-txt {
-  font-size: 10vw;
+  font-size: 9vw;
   font-family: "Mohave", sans-serif;
   font-weight: 900;
   text-align: center;
 }
+
+.big-txt-eng {
+  font-size: 8vw;
+  font-family: "Mohave", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
 .instagram {
   text-align: center;
 }
@@ -259,8 +290,7 @@ html {
 }
 
 img {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .onas-img {
@@ -268,6 +298,7 @@ img {
   justify-items: center;
   align-items: center;
 }
+
 .onas-img img {
   width: 50%;
 }
@@ -302,6 +333,7 @@ img {
 .gear {
   height: 100vh;
 }
+
 @media only screen and (max-width: 768px) {
   .gear {
     padding: 20px !important;
@@ -313,7 +345,6 @@ img {
     font-size: 20px;
   }
 }
-
 .photos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -341,4 +372,4 @@ sup {
 
 .btn-light {
   background-color: #ffffff !important;
-} 
+} /*# sourceMappingURL=styles.css.map */

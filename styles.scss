@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;700;800;900&family=Mohave:wght@300;400;500;600;700&family=Reenie+Beanie&family=Righteous&family=Rock+3D&display=swap");
-
 body,
 html {
   font-family: "Inter Tight", sans-serif;
@@ -14,15 +13,15 @@ html {
 
 /* LANDING */
 .landing {
-  background-image: url("./photos/Compressed/1\ start.jpg");
+  background-image: url("./photos/Compressed/1 start.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
-
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
+  .landing {
     background-image: url("./photos/Compressed/trzy.jpg");
-
   }
 }
 
@@ -34,32 +33,32 @@ html {
   height: 100vh;
   color: #fff;
   font-family: "Righteous", cursive;
-
-  h1 {
-    font-size: 200px;
-
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-    @media screen and (max-width: 1280px) {
-      font-size: 100px;
-      letter-spacing: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-      font-size: 70px;
-      letter-spacing: normal;
-    }
-
-    @media screen and (max-width: 380px) {
-      font-size: 50px;
-      letter-spacing: normal;
-    }
+}
+.title h1 {
+  font-size: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@media screen and (max-width: 1280px) {
+  .title h1 {
+    font-size: 100px;
+    letter-spacing: 20px;
   }
-
-  h2 {
-    text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 70px;
+    letter-spacing: normal;
   }
+}
+@media screen and (max-width: 380px) {
+  .title h1 {
+    font-size: 50px;
+    letter-spacing: normal;
+  }
+}
+.title h2 {
+  text-align: center;
 }
 
 /* HEADER */
@@ -77,8 +76,7 @@ html {
   align-items: center;
   padding: 1rem;
   font-family: "Mohave", sans-serif;
-  background-color: #0000008a;
-
+  background-color: rgba(0, 0, 0, 0.5411764706);
 }
 
 .hamburger {
@@ -91,7 +89,6 @@ html {
   height: 3px;
   margin: 5px auto;
   border-radius: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #ffffff;
 }
@@ -108,7 +105,6 @@ html {
   margin-left: 20px;
   text-decoration: none;
   list-style: none;
-
 }
 
 .nav-link {
@@ -121,6 +117,15 @@ html {
 .nav-link:hover {
   color: #ffa806;
 }
+.us-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-shadow img {
+  box-shadow: none !important;
+
+}
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -128,46 +133,40 @@ html {
     left: -100%;
     top: 4rem;
     flex-direction: column;
-    background-color: #fffffff8;
+    background-color: rgba(255, 255, 255, 0.9725490196);
     width: 100%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-
   }
-
   .nav-link {
     color: #000000;
     font-weight: 600;
+    
   }
-
+ 
+ 
   .nav-menu.active {
     left: 0;
   }
-
   .nav-item {
     margin: 1.4rem 0;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* back to top button */
 #myBtn {
   display: none;
@@ -204,28 +203,30 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-  .mobile {
-    h1 {
-      font-size: 70px;
-      padding-top: 20px;
-    }
-
-    p {
-      text-align: left;
-      letter-spacing: 0.2px;
-      padding: 15px !important;
-      font-size: 20px !important;
-    }
+  .mobile h1 {
+    font-size: 70px;
+    padding-top: 20px;
+  }
+  .mobile p {
+    text-align: left;
+    letter-spacing: 0.2px;
+    padding: 15px !important;
+    font-size: 20px !important;
   }
 }
-
 .big-txt {
-  font-size: 10vw;
+  font-size: 9vw;
+  font-family: "Mohave", sans-serif;
+  font-weight: 900;
+  text-align: center;
+
+}
+.big-txt-eng {
+  font-size: 8vw;
   font-family: "Mohave", sans-serif;
   font-weight: 900;
   text-align: center;
 }
-
 
 
 .instagram {
@@ -239,14 +240,11 @@ html {
   text-align: center;
 }
 
-
-
 .bg-one {
   background-image: url("./photos/Compressed/tlo1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .bg-two {
@@ -258,7 +256,7 @@ html {
 }
 
 .text-bg {
-  background-color: #ffffff65;
+  background-color: rgba(255, 255, 255, 0.3960784314);
 }
 
 .text-dark {
@@ -290,7 +288,7 @@ html {
 }
 
 .kontakt-bg {
-  background-color: #0000002f !important;
+  background-color: rgba(0, 0, 0, 0.1843137255) !important;
 }
 
 img {
@@ -298,15 +296,13 @@ img {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-
 .onas-img {
   display: flex;
   justify-items: center;
   align-items: center;
-
-  img {
-    width: 50%;
-  }
+}
+.onas-img img {
+  width: 50%;
 }
 
 .onas-txt {
@@ -316,84 +312,66 @@ img {
 @media only screen and (max-width: 768px) {
   .onas-img {
     padding-bottom: 3rem !important;
-
-    img {
-      width: 90%;
-    }
   }
-
-
+  .onas-img img {
+    width: 90%;
+  }
   .onas-text {
     width: 90%;
   }
 }
-
-.mobile-sprzet {
-  img {
-    width: 400px !important;
-  }
+.mobile-sprzet img {
+  width: 400px !important;
 }
 
 @media only screen and (max-width: 768px) {
-  .mobile-sprzet {
-    img {
-      width: 200px !important;
-    }
+  .mobile-sprzet img {
+    width: 200px !important;
   }
-
   .instagram {
     padding-top: 50px;
   }
 }
-
 .gear {
   height: 100vh;
-
-  @media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 768px) {
+  .gear {
     padding: 20px !important;
-
-    h1 {
-      font-size: 25px;
-    }
-
-    h2 {
-      font-size: 20px;
-    }
+  }
+  .gear h1 {
+    font-size: 25px;
+  }
+  .gear h2 {
+    font-size: 20px;
   }
 }
 
-
-  .photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
 
 @media only screen and (min-width: 768px) {
   .desk-p-1 {
     padding-right: 90px !important;
   }
-
   .desk-p-2 {
     width: 50%;
   }
-  .justify-txt {
-    p {
-      padding: 0px 70px 0px 70px;
-    }
-  
+  .justify-txt p {
+    padding: 0px 70px 0px 70px;
   }
 }
-
 .justify-txt {
   text-align: justify !important;
-
 }
 
 sup {
   vertical-align: super;
 }
+
 .btn-light {
   background-color: #ffffff !important;
-}
+} /*# sourceMappingURL=styles.css.map */
